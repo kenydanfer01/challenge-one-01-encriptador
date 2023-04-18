@@ -1,0 +1,17 @@
+/*-> Import more styles <-*/
+@import "buttons.css";
+@import "inputs.css";
+@import "output.css";
+@import "logoalura.css";
+@import "modal.css";
+@import "button-social.css";
+/* @import "reset-page.css"; */
+
+/* -> responsive <- */
+@import "mediaqueries.css";
+
+/* Estyles body */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f3f5fc;
+}

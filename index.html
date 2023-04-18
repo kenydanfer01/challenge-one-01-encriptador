@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- estyles homepage -->
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+    <script src="./js/main.js" defer></script>
+
+    <title>Codificador de Texto</title>
+    <link rel="icon" href="./assets/favicon-k.png">
+</head>
+
+<body>
+    <!-- Buttom Redes Sociales  -->
+    <div class="container-social">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/kenydanfer-developer/" class="fa fa-linkedin" target="_blank">
+            </a>
+            <a href="https://github.com/kenydanfer01" class="fa fa-github" target="_blank">
+            </a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
+
+    <!-- Principal page -->
+    <main class="content hides">
+        <img class="logo-alura" src="./assets/logoAlura.svg" alt="logo Alura" />
+        <!-- Body -->
+        <section class="container">
+            <div class="container-inputs">
+                <div class="input-area">
+                    <textarea class="input-textarea" placeholder="Escriba su texto"></textarea>
+                </div>
+                <!-- information & actions -->
+                <div class="buttons">
+                    <p class="informative">
+                        <img class="img-exclamation" src="./assets/exclamacao.svg" alt="Icone exclamação" />Sólo letras
+                        Minúsculas y sin Acento.
+                    </p>
+                    <!-- buttons -->
+                    <div class="btn-group">
+                        <button class="btn btn-encript">Encriptar</button>
+                        <button class="btn btn-desencript">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- output elements -->
+            <div class="output">
+                <span class="result invisible" placeholder="Resultado"></span>
+                <div class="block-output">
+                    <img class="img-codigo" src="./assets/logoSearch.svg" alt="Imagem verificando criptografia" />
+                    <h2>Ningún mensaje encontrado</h2>
+                    <p>
+                        Escriba el texto que desea Encriptar o Desencriptar.
+                    </p>
+                </div>
+
+                <button class="btn-copy invisible">Copiar</button>
+            </div>
+
+            <!-- Modal message -->
+            <div class="fade hide"></div>
+            <div class="modal hide">
+                <div class="modal-header">
+                    <h2>Aviso!!!</h2>
+                    <button class="close-modal">Cerrar</button>
+                </div>
+                <div class="modal-body">
+                    <h3>Revise el texto que escribió</h3>
+                    <p>Sólo se permiten letras minúsculas y sin acentos.</p>
+                    <p>El texto blanco tampoco es permitido.</p>
+                    <p>Es posible que no haya escrito nada. <br>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

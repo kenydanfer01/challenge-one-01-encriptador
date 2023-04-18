@@ -1,0 +1,63 @@
+/* ----------------------> Styles buttons <---------------------- */
+.informative {
+  margin: 10px;
+}
+
+.img-exclamation {
+  margin-right: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 20rem;
+  height: 4.5rem;
+  border-radius: 24px;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-encript {
+  background: #0a3871;
+  color: #ffffff;
+  transition: 0.5s ease-out;
+}
+
+.btn-encript:hover {
+  background: #052051;
+  transform: scale(0.9);
+}
+
+.btn-desencript,
+.btn-copy {
+  background: #eff1fa;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  transition: 0.5s ease-out;
+}
+
+.btn-desencript:hover,
+.btn-copy:hover {
+  background: #aab2d5;
+  transform: scale(0.9);
+}
+
+.btn-copy {
+  width: 20rem;
+  height: 4.5rem;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
